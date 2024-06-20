@@ -17,7 +17,6 @@ return new class extends Migration
             $table->string('direccion',255)->default('');
             $table->string('correo',255)->default('');
             $table->string('telefono',255)->default('');
-            $table->string('materia',255)->default('');
         });
     }
 

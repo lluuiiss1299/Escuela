@@ -14,7 +14,8 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(AlumnoSeeder::class);
         $this->call(MaestroSeeder::class);
-        $this->call(RelMaAlSeeder::class);
+        $this->call(ClaseSeeder::class);
+        $this->call(RelClaseAlumnoSeeder::class);
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([

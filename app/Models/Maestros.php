@@ -14,7 +14,7 @@ class Maestros extends Model
         'direccion',
         'correo',
         'telefono',
-        'materia',
+        'materia'
     ];
     use HasFactory;
 }
