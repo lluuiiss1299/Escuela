@@ -32,7 +32,7 @@ class ViewMaestro extends Command
                     ->where('rel.idMaestro',$idMaestro)
                     ->select('*','a.nombre as nombreAlumno','maestros.nombre as nombreMaestro')
                     ->get();
-        $lista = 'Lista de alumnos del maestr@ '. $maestros[0]->nombreMaestro . PHP_EOL;
+        $lista = 'Lista de alumnos del maestr@ '. $maestros[0]->nombreMaestro . ' para la materia '. $maestros[0]->materia. PHP_EOL;
         foreach ($maestros as $key => $maestro) {
             $lista .= $maestro->nombreAlumno . PHP_EOL;
         }
